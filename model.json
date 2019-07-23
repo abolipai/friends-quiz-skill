@@ -1,0 +1,151 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "friendly quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "answerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answerSlot"
+                        },
+                        {
+                            "name": "option",
+                            "type": "optionSlot"
+                        }
+                    ],
+                    "samples": [
+                        "Is the answer option {option}",
+                        "Answer is option {option}",
+                        "I think it is option {option}",
+                        "Option {option}",
+                        "The answer is option {option}",
+                        "Can the answer be {answer}",
+                        "Answer is {answer}",
+                        "I think the answer is {answer}",
+                        "{answer}",
+                        "The answer is {answer}",
+                        "Is the answer {answer}"
+                    ]
+                },
+                {
+                    "name": "decisionIntent",
+                    "slots": [
+                        {
+                            "name": "decision",
+                            "type": "decisionSlot"
+                        }
+                    ],
+                    "samples": [
+                        "Ready",
+                        "Yeah I'm ready",
+                        "{decision}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "answerSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Las Vegas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Atlantic City"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Central Perk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Insomnia Cafe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "optionSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "B"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "decisionSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Ready"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Naah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nope"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "No"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yeah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yes"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
